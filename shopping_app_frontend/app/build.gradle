@@ -5,7 +5,7 @@ plugins {
 android {
     namespace 'com.example.shoppingappfrontend'
     compileSdk 34
-    
+
     buildFeatures {
         buildConfig true
     }
@@ -16,6 +16,9 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
+        // PUBLIC_INTERFACE
+        // Allow API_BASE_URL to be injected via local.properties/.env pattern or simply hardcoded for demo
+        buildConfigField "String", "API_BASE_URL", "\"https://api.yourdomain.com/v1/\""
     }
 
     compileOptions {
@@ -28,25 +31,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-    }
-
-    defaultConfig {
-        applicationId "com.example.shoppingappfrontend"
-        minSdk 24
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 

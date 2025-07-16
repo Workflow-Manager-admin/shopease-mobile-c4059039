@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">shopping_app_frontend</string>
+    <string name="app_name">Shopease</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="orders">Orders</string>
+    <string name="account">Account</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>

@@ -1,0 +1,10 @@
+<resources>
+    <color name="primary">#232f3e</color>
+    <color name="secondary">#ff9900</color>
+    <color name="accent">#ffd814</color>
+    <color name="white">#ffffff</color>
+    <color name="light_bg">#f6f6f6</color>
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#555555</color>
+    <color name="bottom_nav_icon">#232f3e</color>
+</resources>
